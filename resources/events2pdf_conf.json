@@ -1,0 +1,26 @@
+{
+		"mevents_url":				"https://aagainesville.org/wp-admin/admin-ajax.php?action=meetings",
+		"minput":						"../resources/events.json", 
+		"moutput":					"../events2pdf.pdf",
+		"mtypes":						[ "in_person",  "hybrid"],
+		"mpage_size":				"legal",
+		"mpage_orientation":	"landscape",
+        "mcols":						3,
+		"mcol_widths":				[0.17, 0.62, 0.21],
+        "mframe_count":	  		4,
+        "mfont":						"Helvetica",
+        "mfont_bold":        	   "Helvetica-Bold",
+        "mfont_size":				8,
+		"mleading":					1.1,
+        "mpage_margin":			0.5,
+		"mcover_page":			"../resources/coverpage.jpg",
+		"mcover_page_size":	0.7,
+		"msection":			    	["SUNDAY",
+											"MONDAY",
+											"TUESDAY",
+											"WEDNESDAY",
+											"THURSDAY",
+											"FRIDAY",
+											"SATURDAY"
+											]
+}		
