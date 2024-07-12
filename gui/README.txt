@@ -1,0 +1,1 @@
+events2pdfMW.ui is created with Qt Designer.  Execute makeMW.bat to convert it to python code in events2pdfMW.py and copy it to the parent directory.  gui.pyw imports it when run.

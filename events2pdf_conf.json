@@ -1,0 +1,45 @@
+{
+    "minput": "https://aagainesville.org/wp-admin/admin-ajax.php?action=meetings",
+    "moutput": "AA_Gainesville_WaW.pdf",
+    "mtypes": [
+        "in_person",
+        "hybrid"
+    ],
+    "mpage_size": "legal",
+    "mpage_orientation": "landscape",
+    "mcols": 3,
+    "mcol_widths": [
+        17,
+        62,
+        21
+    ],
+    "mframe_count": 4,
+    "mfont": "Helvetica",
+    "mfonts": [
+        "Courier",
+        "Courier-Bold",
+        "Courier-BoldOblique",
+        "Courier-Oblique",
+        "Helvetica",
+        "Helvetica-Bold",
+        "Helvetica-BoldOblique",
+        "Helvetica-Oblique",
+        "Times-Bold",
+        "Times-BoldItalic",
+        "Times-Italic",
+        "Times-Roman"
+    ],
+    "mfont_size": 8,
+    "mleading": 1.1,
+    "mpage_margin": 0.4,
+    "mcover_page": "coverpage.png",
+    "msections": [
+        "SUNDAY",
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY"
+    ]
+}
