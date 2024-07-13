@@ -193,6 +193,30 @@ format_group() re explanation:
 def format_time(m):
     return(m['time_formatted'])
 
+def group_name(m):
+    """Format group name and designations."""
+
+    designations_map = {
+        'O': 'O',
+        'C': 'C',
+        'D': 'D',
+        'MED': 'M',
+        'SP': 'S',
+        'B': 'BB',
+        'LIT': 'LIT',
+        'ST': 'SS',
+        'BE': 'BG',
+        'CF': 'CF',
+        'X': 'WC',
+    }
+
+    designations = []
+    for key, value in designations_map.items():
+        if key in m['types']:
+            designations.append(value)
+
+    return f"{m['name']} {'/'.join(designations)}"
+
 def format_group(m):
     """Format event name, address, notes."""
 
@@ -200,7 +224,7 @@ def format_group(m):
     maddr = re.sub('[ -]', '&nbsp;', maddr)         # make maddr non breaking
     if 'notes' in m:
         maddr += f"<br/>{m['notes']}"
-    return( f"<b>{m['name']}</b><br/>{m['location']},  {maddr}")
+    return( f"<b>{group_name(m)}</b><br/>{m['location']}, {maddr}")
 
 def format_region(m):
     return(f"<b>{m['region']}</b>")
