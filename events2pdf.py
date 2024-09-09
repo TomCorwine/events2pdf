@@ -180,11 +180,11 @@ def get_cover_page(conf, width):
         cp.append(Paragraph(DEFAULT_COVER_PAGE,  styleCP))
     return(cp)
 
-"""
+r"""
 functions to format table cells
 format_group() re explanation:
   capture address up to region name, strip trailing comma or space
-  re.match('(.*)\s'+m['region'], m['formatted_address'])[1].rstrip(', ')
+  re.match(r"(.*)\s"+m['region'], m['formatted_address'])[1].rstrip(', ')
   formatted_address = '17405 US-441, High Springs, FL 32643, USA'
   region = 'High Springs'
   captured address = '17405 US-441'
@@ -220,7 +220,7 @@ def group_name(m):
 def format_group(m):
     """Format event name, address, notes."""
 
-    maddr = re.match('(.*)\s'+m['region'], m['formatted_address'])[1].rstrip(', ')
+    maddr = re.match(r"(.*)\s"+m['region'], m['formatted_address'])[1].rstrip(', ')
     maddr = re.sub('[ -]', '&nbsp;', maddr)         # make maddr non breaking
     if 'notes' in m:
         maddr += f"<br/>{m['notes']}"
