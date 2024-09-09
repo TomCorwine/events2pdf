@@ -9,8 +9,8 @@
     "mpage_orientation": "landscape",
     "mcols": 3,
     "mcol_widths": [
-        17,
-        62,
+        16,
+        63,
         21
     ],
     "mframe_count": 4,
@@ -31,7 +31,7 @@
     ],
     "mfont_size": 8,
     "mleading": 1.1,
-    "mpage_margin": 0.4,
+    "mpage_margin": 0.3,
     "mcover_page": "coverpage.png",
     "msections": [
         "SUNDAY",
