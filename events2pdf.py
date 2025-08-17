@@ -196,6 +196,9 @@ def format_time(m):
 def group_name(m):
     """Format group name and designations."""
 
+    if 'types' not in m:
+        return m['name']
+
     designations_map = {
         'O': 'O',
         'C': 'C',
